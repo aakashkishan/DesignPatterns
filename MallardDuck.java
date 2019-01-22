@@ -3,16 +3,19 @@
 
 /* Implement the fly() and quack() functions from the Flyable and Quackable Interface 
    And the other traits like swim() and display() from Duck */
-public class MallardDuck extends Duck implements Flyable, Quackable {
+public class MallardDuck extends Duck {
 
     public MallardDuck() { }
 
+    YesFly flyObj = new YesFly();
+    Quack quackObj = new Quack();
+
     public void quack() {
-        System.out.println("I Quack");
+        quackObj.quack();
     }
 
     public void fly() {
-        System.out.println("I can Fly");
+        flyObj.fly();
     }
 
     public void display() {

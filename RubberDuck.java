@@ -12,12 +12,15 @@
 
     public RubberDuck() { }
 
+    NoFly flyObj = new NoFly();
+    Squeak quackObj = new Squeak();
+
     public void quack() {
-        System.out.println("I Squeak");
+        quackObj.quack();
     }
 
     public void fly() {
-        System.out.println("I cannot Fly");
+        flyObj.fly();
     }
 
     public void display() {

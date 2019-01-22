@@ -8,21 +8,24 @@
 /* But consider a few more examples of outliers like te RubberDuck, 
    It is very strenuous to have to override the function in the 
    outlier's class. A permanent and a global solution has to be proposed */
-public abstract class Duck {
+public abstract class Duck implements Flyable, Quackable {
 
     public Duck() {}
 
-    // public void quack() {
-    //     System.out.println("I Quack");
-    // }
+    Flyable flyObj;
+    Quackable quackObj;
+
+    public void quack() {
+        quackObj.quack();
+    }
 
     public void swim() {
         System.out.println("I can Swim");
     }
 
-    // public void fly() {
-    //     System.out.println("I can Fly");
-    // }
+    public void fly() {
+        flyObj.fly();
+    }
 
     public void display() {}
 
