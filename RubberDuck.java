@@ -2,7 +2,13 @@
    a common duck and also has Rubber Duck specific traits */
 
 /* The Rubberduck can neither fly nor quack. It cannot fly and it squeaks */
-   public class RubberDuck extends Duck {
+// Duplicates of the non-abstract functions fly() and quack() are created
+// The function swim() from the class Duck remains unchanged
+
+/* Implement the fly() and quack() functions from the Flyable and Quackable Interface 
+   And the other traits like swim() and display() from Duck */
+
+   public class RubberDuck extends Duck implements Flyable, Quackable{
 
     public RubberDuck() { }
 
