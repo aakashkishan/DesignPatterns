@@ -12,12 +12,21 @@ public class DuckSimulator {
         System.out.println("Mallard Duck Description: ");
         mDuck.quack();
         mDuck.swim();
+        mDuck.fly();
         mDuck.display();
 
-        RedHeadDuck rDuck = new RedHeadDuck();
+        RedHeadDuck hDuck = new RedHeadDuck();
         System.out.println("Red Head Duck Description: ");
+        hDuck.quack();
+        hDuck.swim();
+        hDuck.fly();
+        hDuck.display();
+
+        RubberDuck rDuck = new RubberDuck();
+        System.out.println("Rubber Duck Description: ");
         rDuck.quack();
         rDuck.swim();
+        rDuck.fly();
         rDuck.display();
 
     }
